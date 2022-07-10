@@ -21,6 +21,7 @@ class Login {
     
     public function autenticar()
     {
+        // Variáveis chubadas para fins de teste
         $nome = 'Mário Lucas';
         $email = 'mario@gmail.com';
         $senha = '123';
@@ -50,31 +51,3 @@ class Login {
         redirect(base_url('login/index'));
     }
 }
-
-
-// if(isset($_POST['email']) && $_POST['email'] != null):
-//     $emailEnviado = $_POST['email'];
-// else:
-//     $_SESSION['temp_error'] = 'E-mail vazio ou inválido';
-//     header('Location: ../login.php');
-// endif;
-
-// if(isset($_POST['senha']) && $_POST['senha'] != null):
-//     $senhaEnviada = $_POST['senha'];
-// else:
-//     $_SESSION['temp_error'] = 'Senha vazia ou inválida';
-//     header('Location: ../login.php');
-// endif;
-
-// if($email == $emailEnviado):
-//     if($senha == $senhaEnviada):
-//         $_SESSION['nome'] = $nome;
-//         header('Location: ../index.php');
-//     else:
-//         $_SESSION['temp_error'] = 'Senha incorreta!';
-//         header('Location: ../login.php');
-//     endif;
-// else:
-//     $_SESSION['temp_error'] = 'Usuário não encontrado!';
-//     header('Location: ../login.php');
-// endif;
